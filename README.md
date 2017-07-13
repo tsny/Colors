@@ -24,15 +24,12 @@ The code file for the custom class (subclass) of the View Controller is to be cr
 
 The resulting app should look like the following.
 
-Colors Table View 1000.png
-
 The requirements provided above are all you are required to do for this challenge. If you would like to be challenged further, try to accomplish the following.
 
 Extra Challenge (not required, but give it a try!)
 
 The goal of this extra challenge is to set the background color of each Table View Cell to the color whose name appears in the cell.
 
-Colors Table View BGColor 1000.png
 
 Each Table View Cell has a property called backgroundColor. This property can be used to set the background color of the cell and is of type UIColor. The UIColor class contains a set of predefined colors (Links to an external site.)Links to an external site. (scroll down on documentation page to "Creating a Color Object with a Predefined Color"). So, for example, UIColor.red can be assigned to the backgroundColor property of the cell to make it red.
 
