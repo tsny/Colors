@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -181,10 +182,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Udm-Ey-lXM">
-                                <rect key="frame" x="16" y="20" width="343" height="580"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFI-13-UrC">
                                 <rect key="frame" x="154" y="609" width="66" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -193,11 +190,20 @@
                                     <segue destination="cpb-IR-LpW" kind="show" id="b0a-tc-eUg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Udm-Ey-lXM">
+                                <rect key="frame" x="31" y="120" width="313" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BXY-UX-vbF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dFI-13-UrC" firstAttribute="centerX" secondItem="nUK-9k-yr9" secondAttribute="centerX" id="1yS-dE-UQI"/>
+                            <constraint firstItem="Udm-Ey-lXM" firstAttribute="leading" secondItem="nUK-9k-yr9" secondAttribute="leadingMargin" constant="15" id="5Hn-Nm-XYQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Udm-Ey-lXM" secondAttribute="trailing" constant="15" id="Fa0-Gd-WjA"/>
                             <constraint firstItem="ztq-cS-u6Y" firstAttribute="top" secondItem="dFI-13-UrC" secondAttribute="bottom" priority="1" constant="10" id="Wub-Ug-Eyv"/>
+                            <constraint firstItem="Udm-Ey-lXM" firstAttribute="top" secondItem="vc8-Nw-sBq" secondAttribute="bottom" constant="100" id="vzE-RO-KUJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -206,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FiF-8i-7BJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1220" y="-170"/>
+            <point key="canvasLocation" x="1220" y="-170.46476761619192"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
