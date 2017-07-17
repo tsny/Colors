@@ -22,9 +22,9 @@ class ColorModel
 {
     static var currColor = UIColor.white
     
-    static func updateCurrColor(fromString: String)
+    static func updateCurrColor(fromString colorString: String)
     {
-        if let newUIColor = colorDict[fromString]
+        if let newUIColor = colorDict[colorString]
         {
             currColor = newUIColor
         }
