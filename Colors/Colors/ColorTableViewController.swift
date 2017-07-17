@@ -14,13 +14,7 @@ class ColorTableViewController : UITableViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let tableCell = sender as? UITableViewCell!
         {
-            if segue.identifier == "newColor"
-            {
-                if let destination = segue.destination as? ColorViewController
-                {
-                    destination.newColorString = tableCell.textLabel!.text!
-                }
-            }
+            ColorModel.updateCurrColor(fromString: tableCell.textLabel!.text!)
         }
     }
 }
